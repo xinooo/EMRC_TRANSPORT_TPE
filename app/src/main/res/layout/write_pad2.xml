@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables"
+        android:layout_marginBottom="50dp">
+
+        <FrameLayout
+            android:id="@+id/tablet_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:ignore="ContentDescription">
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="45dp"
+            android:text="連絡電話："
+            android:textSize="30sp"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:text="與病人關係："
+            android:textSize="30sp"
+            android:textColor="@color/black">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar"
+        android:paddingTop="4dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="UseCompoundDrawables">
+
+        <Button
+            android:id="@+id/tablet_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="確定" />
+
+        <Button
+            android:id="@+id/tablet_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/tablet_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

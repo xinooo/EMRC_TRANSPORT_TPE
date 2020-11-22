@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:layout_width="768dp"
+            android:layout_height="952dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_page_tpe"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/emrc_date"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:text="@string/vita_date"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/main5_Car_unit"
+            android:layout_width="102dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <CheckBox
+            android:id="@+id/ambu_accepted1"
+            android:layout_width="128dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="80dp"
+            android:text="救災救護指揮中心"
+            android:textSize="12sp"/>
+
+        <CheckBox
+            android:id="@+id/ambu_accepted2"
+            android:layout_width="105dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="80dp"
+            android:text="分隊自行受理"
+            android:textSize="12sp"/>
+
+        <CheckBox
+            android:id="@+id/ambu_accepted3"
+            android:layout_width="115dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="80dp"
+            android:text="營運安全處"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="375dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/time0"
+            android:layout_width="115dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="119dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="112dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="112dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/time4"
+            android:layout_width="118dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/time5"
+            android:layout_width="115dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:text="@string/vita_time_hint"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/ambu_place1"
+            android:layout_width="607dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="151dp"
+            android:textSize="20sp"
+            android:background="@color/white"
+            tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <Spinner
+            android:id="@+id/spinner_hos"
+            android:layout_width="188dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:spinnerMode="dialog"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+        <Spinner
+            android:id="@+id/spinner_hos2"
+            android:layout_width="188dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            tools:ignore="RtlHardcoded" />
+
+        <Spinner
+            android:id="@+id/spinner_hos3"
+            android:layout_width="198dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="3dp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/main5_name"
+            android:layout_width="144dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="257dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/main5_identity"
+            android:layout_width="144dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <Spinner
+            android:id="@+id/spinner_main5_gender"
+            android:layout_width="71dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <EditText
+            android:id="@+id/main5_age"
+            android:layout_width="52dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:inputType="number"
+            android:maxLength="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/ambu_place2"
+            android:layout_width="507dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/ambu_property"
+            android:layout_width="145dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="490dp"
+            android:layout_marginTop="258dp"
+            android:orientation="vertical"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/sign0"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="2dp"
+            android:maxLength="8"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/main5_info_photo"
+            android:layout_width="98dp"
+            android:layout_height="114dp"
+            android:layout_marginLeft="640dp"
+            android:layout_marginTop="255dp"
+            android:background="@drawable/item_background_sky"
+            android:src="@drawable/fs_image"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="640dp"
+            android:layout_marginTop="355dp"
+            android:gravity="center"
+            android:text="@string/info_ps"
+            android:textSize="10sp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/HelpN_TextView"
+            android:layout_width="335dp"
+            android:layout_height="202dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="414dp"
+            android:orientation="vertical"
+            android:textSize="25sp"
+            android:text="@string/s_ts_63"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/HelpY_TextView"
+            android:layout_width="333dp"
+            android:layout_height="202dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="414dp"
+            android:orientation="vertical"
+            android:textSize="25sp"
+            android:text="@string/s_ts_63"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <LinearLayout
+            android:id="@+id/HelpN_LinearLayout"
+            android:layout_width="335dp"
+            android:layout_height="202dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="414dp"
+            android:orientation="vertical"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <LinearLayout
+            android:id="@+id/HelpY_LinearLayout"
+            android:layout_width="333dp"
+            android:layout_height="202dp"
+            android:layout_marginLeft="404dp"
+            android:layout_marginTop="414dp"
+            android:orientation="vertical"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/ambu_complaint0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="620dp"
+            android:text="喘、呼吸急促"
+            android:background="@color/white"
+            android:textSize="12sp"/>
+
+        <CheckBox
+            android:id="@+id/ambu_complaint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:background="@color/white"
+            android:text="疼痛"
+            android:textSize="12sp"/>
+        <CheckBox
+            android:id="@+id/ambu_complaint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:background="@color/white"
+            android:text="肢體無力"
+            android:textSize="12sp"/>
+        <CheckBox
+            android:id="@+id/ambu_complaint3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:background="@color/white"
+            android:text="暈、噁心、想吐"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="455dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="620dp"
+            android:gravity="top"
+            android:background="@color/white"
+            android:text="補述說明："
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,HardcodedText"/>
+
+        <EditText
+            android:id="@+id/ambu_complaint"
+            android:layout_width="455dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="70dp"
+            android:gravity="top"
+            android:background="@color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,HardcodedText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/accident_car1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="630dp"
+            android:layout_marginTop="624dp"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/accident_car2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="630dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/accident_car3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="630dp"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/accident_car4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="630dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/Mediacal_TextView"
+            android:layout_width="305dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="816dp"
+            android:orientation="vertical"
+            android:textSize="20sp"
+            android:text="@string/s_ts_64"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <LinearLayout
+            android:id="@+id/Mediacal_LinearLayout"
+            android:layout_width="305dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="816dp"
+            android:orientation="vertical"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="383dp"
+            android:layout_marginTop="842dp"
+            android:orientation="vertical"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="0"
+            android:gravity="center"
+            android:background="@color/white"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+
+        <ImageView
+            android:id="@+id/allergy0"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="383dp"
+            android:layout_marginTop="842dp"
+            android:orientation="vertical"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="0"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/fs_check"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables" >
+
+        <EditText
+            android:id="@+id/allergy1"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="468dp"
+            android:layout_marginTop="842dp"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <EditText
+            android:id="@+id/allergy2"
+            android:layout_width="87dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="842dp"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+        <EditText
+            android:id="@+id/allergy3"
+            android:layout_width="87dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="842dp"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/main5_level"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main5_photo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/fs_image"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/emrgn_no_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="605dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main_5_ok"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/fs_check_1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/main_5_up"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="75dp"
+        android:src="@drawable/fs_print"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+
+        <TextView
+            android:id="@+id/photo_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="0"
+            android:gravity="center"
+            android:background="@drawable/fs_num"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
